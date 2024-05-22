@@ -239,6 +239,17 @@ def scrape(driver, xpath):
     except Exception as e:
         print("Error:", e)
 
+# def init_browser():
+#     options = Options()
+#     options.add_argument('--disable-extensions')
+#     user_data_dir = os.path.join(os.path.dirname(__file__), 'user_data')
+#     options.add_argument(f'--user-data-dir={user_data_dir}')
+#     driver = Chrome(options=options)
+#     driver.maximize_window()
+#     driver.get("https://www.youtube.com")
+
+#     return driver
+
 def init_browser():
     options = Options()
     
